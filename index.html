@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación multimedia</title>
+    <!-- libreria css reveal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css"
+        integrity="sha512-ZIo9ivf88U0L1S+0D/npMNTTkjez5B9cK5xIecN4IA2OmtbTNBbPAZo/0cBC195sq7FU7cEOVPwtit37f/+1rQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tema -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/sky.min.css"
+        integrity="sha512-gLymIttr2gq642OBM4g7Oab3Bx3J1XB1TSbP5DZqcXaDWULMmSHHHkXFdRsx4lMFmt9705mNRozs1qeSvOAJpw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="pagina1">
+                <h1>¡VIVA EL VERANO!</h1>
+                <h3>Elisa Mª Gregorio</h3>
+            </section>
+            <section>
+                <p>Todo el mundo desea que llegue el verano por:
+                <ul>
+                    <li>El calor</li>
+                    <li>Ropa más comoda</li>
+                    <li>Vacaciones</li>
+                    <li>Playa o piscina</li>
+                    <li>Disfrutar las terracitas</li>
+                    <li>Salir más a la calle...</li>
+                </ul>
+                </p>
+            </section>
+            <section>
+                <p>PERO CUANDO LLEGA...</p>
+                <video src="viva el verano.mp4" controls width="300"></video>
+            </section>
+            <section> <h2>CONCLUSIÓN:</h2>
+            <p> El ser humano por naturales es indeciso:
+                <ul>
+                    <li>Si hace calor queremos frío y viceversa</li>
+                    <li>Si tenemos playa queremos piscina y viceversa</li>
+                    <li>Nos quejamos que en verano hay mucha gente</li>
+                    <li></li>
+                    <li></li>
+
+
+                </ul>
+            </p>
+            </section>
+            <section> slide 5</section>
+            <section>
+                <img src="logo-elisa.svg" class="imagen-con-sonido" onmouseover="reproducirSonido()"
+                    onmouseout="detenerSonido()">
+                <audio id="miSonido" src="tiger-roar-loudly-193229.mp3" preload="auto"></audio>
+
+            </section>
+        </div>
+    </div>
+    <script>
+        function reproducirSonido() {
+            var audio = document.getElementById("miSonido");
+            audio.play();
+        }
+
+        function detenerSonido() {
+            var audio = document.getElementById("miSonido");
+            audio.pause();
+            audio.currentTime = 0; // Reinicia el audio a cero
+        }
+    </script>
+
+
+    <!-- libreria js reveal -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"
+        integrity="sha512-lRYVCjdH7dCPCzqLL6eBn78p6WGK5pZxgYBgzTQfWlfX7yiZFLt/qHOMSETHUIz2aZIU/KbjwYHiMsmrcVgJnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+
+    <script>
+        Reveal.initialize();
+
+    </script>
+</body>
+
+</html>

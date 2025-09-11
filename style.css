@@ -1,0 +1,20 @@
+@font-face {
+    font-family: kaushan;
+    src: url(KaushanScript-Regular.otf);
+}
+
+.pagina1 {
+    font-family: kaushan;
+    border: double 10px blueviolet;
+    padding: 1em;
+}
+
+.pagina1 h1,
+.pagina1 h3 {
+    font-family: kaushan;
+}
+
+.imagen-con-sonido {
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+}
